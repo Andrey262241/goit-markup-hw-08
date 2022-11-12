@@ -1,0 +1,100 @@
+.grocery {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
+  
+  .grocery__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    @include desktop {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .grocery__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @include tablet {
+    @include calc(2);
+  }
+   // @media screen and (min-width: 768px) {
+   //   width: calc((100% - 30px) /2);
+  //}
+}
+
+  .grocery__list::before {
+    display: block;
+    background-repeat: no-repeat;
+    background-color: var(--button-color);
+    border-radius: 4px;
+    background-position: center;
+    content: "";
+    width: 290px;
+    height: 120px;
+    
+
+    @include mobile {
+      width: 450px;
+    }
+
+    @include tablet {
+      width: 354px;
+    }
+
+    @include desktop {
+      width: 270px;
+    }
+  }
+  
+  .grocery__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    text-align:center;
+    margin-bottom: 10px;
+
+    @include tablet {
+      text-align: left;;
+    }
+  }
+  
+  .grocery__icon-group::before {
+    background-image: url(../images/group.svg);
+    background-size: 70px;
+    margin-bottom: 30px;
+  }
+  
+  .grocery__icon-clock::before {
+    background-image: url(../images/clock.svg);
+    background-size: 70px;
+    margin-bottom: 30px;
+  }
+  
+  .grocery__icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+    background-size: 70px;
+    margin-bottom: 30px;
+  }
+  
+  .grocery__icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+    background-size: 70px;
+    margin-bottom: 30px;
+  }
+  
+  .grocery__item {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--secondary-color);
+  }

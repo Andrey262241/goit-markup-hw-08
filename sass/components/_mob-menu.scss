@@ -1,0 +1,98 @@
+.mob-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    padding: 48px 40px;
+    font-weight: 500;
+    justify-content: space-between;
+    overflow: scroll;
+}
+
+.menu-close-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    padding: 0;
+    &:hover,
+    &:focus {
+    fill: var(--effect-color);
+    }
+}
+
+.mob-menu-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: .02em;
+    color: var(--accent-color);
+    display: block;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: var(--effect-color);
+    }
+}
+
+.mob-connect-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+    gap: 32px;
+}
+
+.mob-connect-tel {
+    font-size: 27px;
+    line-height: 1.18;
+    letter-spacing: .02em;
+    color: var(--effect-color);
+    @media screen and (min-width: 480px) {
+        font-size: 34px;
+    }
+}
+
+.mob-connect-email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: .02em;
+    color: var(--secondary-color);
+    margin-top: 32px;
+}
+
+.mob-soc-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mob-soc-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: .02em;
+    color: var(--effect-color);
+}
+
+.mob-soc-item:not(:last-child)::after {
+    content: "";
+    border: 1px solid rgba(33,33,33,.2);
+    transform: rotate(90deg);
+    margin-left: 10px;
+    margin-right: 10px;
+}

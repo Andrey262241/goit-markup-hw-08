@@ -1,0 +1,14 @@
+
+.nav-border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--effect-color);
+    border-radius: 2px;
+    margin: -1px;
+    transform: translateY(30px);
+}

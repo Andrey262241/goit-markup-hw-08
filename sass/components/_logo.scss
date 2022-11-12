@@ -1,0 +1,36 @@
+.logo {
+    display: block;
+    margin: 16px auto 16px 0px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    color: var(--accent-color);
+
+    @include tablet {
+      margin: 26px 87px 26px 0px;
+    }
+
+    @include desktop{
+      font-size: 26px;
+      line-height: 1.19;
+    margin: 24px 93px 25px 0px;
+    }
+  }
+
+  .logo__white--item {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--effect-color);
+  }
+
+  .logo__dark--item {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--text-color-on-dark-fone);
+  }
+  
